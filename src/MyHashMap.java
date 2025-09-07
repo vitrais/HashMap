@@ -22,8 +22,7 @@ public class MyHashMap<K, V> {
     }
 
     /**
-     * Inserts a key-value pair into the hash map.
-     * If the key already exists, updates the value and returns the old one.
+     * Inserts a key pair into the hash map.
      *
      * @param key the key to associate with the value
      * @param value the value to associate with the key
@@ -50,10 +49,10 @@ public class MyHashMap<K, V> {
     }
 
     /**
-     * Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+     * Returns the value to which the specified key is mapped
      *
      * @param key the key whose associated value is to be returned
-     * @return the value to which the key is mapped, or null if the key is not found
+     * @return the value to which the key is mapped
      */
     public V get(K key) {
         if (key == null) {
@@ -72,10 +71,10 @@ public class MyHashMap<K, V> {
     }
 
     /**
-     * Removes the mapping for the specified key from this map if present.
+     * Removes the mapping for the specified key from this map
      *
      * @param key key whose mapping is to be removed from the map
-     * @return the previous value associated with the key, or null if there was no mapping for the key
+     * @return the previous value associated with the key
      */
     public V remove(K key) {
         int hash = hash(key);
